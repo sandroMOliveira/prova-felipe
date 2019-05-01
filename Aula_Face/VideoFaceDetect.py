@@ -38,8 +38,8 @@ def split_video_channels():
             roi_color = frame[y:y+h, x:x+w]
         
         #Para ver o os frames em construção
-        cv2.imshow('Video Face', frame)
-        # output_face.write(frame)
+        # cv2.imshow('Video Face', frame)
+        output_face.write(frame)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
     print('Terminou!')
